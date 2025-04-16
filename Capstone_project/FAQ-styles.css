@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+header{   
+    display: flex; 
+    position: fixed;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: "Crimson Text", 'Times New Roman', Times, serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#nav-bar{
+    margin-top: 70px;
+    margin-right: 30px;
+   
+
+}
+
+#nav-bar .nav-links{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold; 
+    padding: 0 20px;
+
+}
+
+.links{
+    display: block;
+    text-decoration: none;
+    color: antiquewhite;  
+    font-style: italic;
+    font-weight: 500;
+    font-size: larger; 
+}
+
+.links::after{
+   content: "";
+   width: 100%;
+   height: 5px;
+   left: 0;
+   background: antiquewhite;
+   bottom: -10px;
+   border-radius: 50px;
+   display: block;
+   transform: scale(0);
+   transition: 0.3s linear;
+   
+}
+
+.links:hover::after{
+    transform: scale(1);
+}
+
+.company-name{
+    color: antiquewhite;  
+    font-style: italic;
+    font-weight: 500;
+    font-size:x-large;
+    margin-top: 70px;
+    margin-right: 400px;
+}
+
+.home-link{
+    text-decoration: none;
+    color:antiquewhite;
+}
+
+.logo{
+    margin-left: 100px;
+    width: 10%;
+    
+}
+
+
+.intro{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background-color: #612526;
+   
+}
+
+.intro-text{    
+    color: antiquewhite;
+    font-size: 100px;
+    font-family: "Crimson Text", 'Times New Roman', Times, serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.info h1{
+    font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:70px;
+    font-weight:300;
+    font-style: normal;
+    text-align: center;
+    padding: 60px 0;   
+    color: #312c2c;
+    width: 70%; 
+}
+
+.faq{
+    width: 80%;
+    height: 100px;
+    margin: 50px 30px 30px 30px;
+    background-color: #312c2c;
+    color: antiquewhite;
+    border-radius: 10px;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px 20px 50px;
+    color: antiquewhite;
+    font-size: 1.5em;
+    font-family: "Crimson Text", 'Times New Roman', Times, serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    background-color: #612526;
+    margin-bottom: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: max-height 0.5s linear;
+}
+
+.answer p{
+    font-size: 40px;
+    padding: 10px 10px 10px 50px;
+    font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:20px;
+    font-weight:lighter;
+    letter-spacing: 3px;
+    color: antiquewhite;
+}
+
+.faq.active .answer{
+    max-height: 300px;
+}
+
+
+.faq.active i{
+    transform: rotate(180deg);
+}
+
+i{
+    transition: transform 0.5s linear;
+}
+
+.contact-form{
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Crimson Text", 'Times New Roman', Times, serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: antiquewhite;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 400;
+    background-color: #612526;
+    
+}
+
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;   
+    background-image: url(contact-img.jpg);
+    background-size: cover;
+    width: 50%;
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding-bottom: 10px;
+}
+
+
+.contact-form hr{
+    width: 150px;
+    height: 5px;
+    border: none;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.contact-input{
+    width: 20vw;
+    height: 50px;
+    border-radius: 40px;
+    background-color: antiquewhite;
+    border: none;
+    box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.5);
+    padding: 0 10px;
+}
+
+
+.contact-input:hover{
+    border: 2px solid #312c2c; 
+}
+
+.contact-input::placeholder{
+    color: #312c2c;
+    padding-top: 10px;
+    font-family: "Crimson Text", 'Times New Roman', Times, serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.contact-left button{
+    width: 10rem;
+    height: 50px;
+    background-color: #312c2c;
+    border-radius: 50px;
+    border: none;
+    color: antiquewhite;
+    font-size: 20px;
+    font-family: "Crimson Text", 'Times New Roman', Times, serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.contact-left button:hover{
+    background: linear-gradient(90deg, #312c2c, transparent);
+}
+
+footer{
+    background-color: #312c2c;
+    text-align: center;
+      
+}
+
+footer img{
+    width: 15%;
+}
+
+footer p{
+    color: antiquewhite;
+    font-size: 20px;
+    font-family: "Crimson Text", 'Times New Roman', Times, serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    margin: 20px;   
+}
+
+.icon{
+    margin-left: -20px;
+}
+
+.fa-facebook{
+    color: antiquewhite; 
+    margin: 20px;
+}
+
+.fa-facebook::after{
+    content: " ";
+    height: 20px;
+    border: 3px solid #612526;
+    margin-left: 20px;
+}
+.fa-instagram{
+    color: antiquewhite;
+    margin-bottom: 50px;
+}
