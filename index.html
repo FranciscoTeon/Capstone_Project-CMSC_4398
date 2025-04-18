@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600;1,700&family=Roboto:ital,wdth,wght@0,75,100;1,75,100&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="New horizans1.png"/>
         <title>Homepage</title>
         <link rel="stylesheet" href="styles.css"/>
     </head>
@@ -15,12 +16,22 @@
             <img class="logo" id="logo" width="200" src="New horizans1.png" alt="company logo"/>
             <p class="company-name"><a class="home-link" href="index.html">New Horizons Flooring LLC</a></p>
             <nav class="nav-bar" id="nav-bar">
+                <ul class="hamburger">
+                    <li onclick=hideBurger() class="menu-links"><a class="options"><i class="fa-solid fa-xmark"></i></a></li>
+                    <li class="menu-links"><a class="options" href="index.html">Home</a></li>
+                    <li class="menu-links"><a class="options" href="#Services">Services</a></li>
+                    <li class="menu-links"><a class="options" href="#About-us">About Us</a></li>
+                    <li class="menu-links"><a class="options" href="FAQ.html">FAQ</a></li>
+                    <li class="menu-links"><a class="options" href="Contact.html">Contact Us</a></li>
+                </ul>
                 <ul>
                     <li class="nav-links"><a class="links" href="index.html">Home</a></li>
                     <li class="nav-links"><a class="links" href="#Services">Services</a></li>
                     <li class="nav-links"><a class="links" href="#About-us">About Us</a></li>
                     <li class="nav-links"><a class="links" href="FAQ.html">FAQ</a></li>
                     <li class="nav-links"><a class="links" href="Contact.html">Contact Us</a></li>
+                    <li onclick=showBurger() class="nav-links"><a class="menu"><i class="fa-solid fa-bars"></i></a></li>
+
                 </ul>
             </nav>
         </header>
@@ -105,14 +116,22 @@
            <div class="gallery-button">
            <button><a href="gallery.html">See More</a></button>
            </div>
-           <section class="form"> 
-            <div class="contact-form">
-                <form action="" class="contact-left">
+           <section class="form">
+               <div class="contact-form">
+
+                <form action="https://formsubmit.co/381cc14dfe06576ad1f95d57c56383c4" method="POST" class="contact-left">
+                    <!-- Honeypot -->
+                    <input type="text" name="_honey" style="display: none;"/>
+
+                    <!-- Disable Captcha -->
+                    <input type="hidden" name="_captcha" value="false"/>
+
+                    <input type="hidden" name="_next" value="https://franciscoteon.github.io/Capstone_Project-CMSC_4398/Success.html"/>
                     <div class="contact-title">
                         <h2>Get in Touch</h2>
                     </div>
                     <hr>
-                    <input class="contact-input" type="text" name="name" placeholder="Full Name" rquired/>
+                    <input class="contact-input" type="text" name="name" placeholder="Full Name" required/>
                     <input class="contact-input" type="email" name="email" placeholder="Email" required/>
                     <input class="contact-input" type="tel" name="phone-number" placeholder="Phone Number" required/> 
                     <textarea class="contact-input" name="message" placeholder="Add a Message"></textarea> 
@@ -133,5 +152,6 @@
                 <i class="fa-brands fa-instagram fa-2xl"></i>
             </div>
         </footer>
+        <script src="menu.js"></script>
     </body>
 </html>

@@ -15,12 +15,22 @@
             <img class="logo" id="logo" width="200" src="New horizans1.png" alt="company logo"/>
             <p class="company-name"><a class="home-link" href="index.html">New Horizons Flooring LLC</a></p>
             <nav class="nav-bar" id="nav-bar">
+                <ul class="hamburger">
+                    <li onclick=hideBurger() class="menu-links"><a class="options"><i class="fa-solid fa-xmark"></i></a></li>
+                    <li class="menu-links"><a class="options" href="index.html">Home</a></li>
+                    <li class="menu-links"><a class="options" href="index.html#Services">Services</a></li>
+                    <li class="menu-links"><a class="options" href="index.htmls#About-us">About Us</a></li>
+                    <li class="menu-links"><a class="options" href="FAQ.html">FAQ</a></li>
+                    <li class="menu-links"><a class="options" href="Contact.html">Contact Us</a></li>
+                </ul>
                 <ul>
                     <li class="nav-links"><a class="links" href="index.html">Home</a></li>
                     <li class="nav-links"><a class="links" href="index.html#Services">Services</a></li>
                     <li class="nav-links"><a class="links" href="index.html#About-us">About Us</a></li>
                     <li class="nav-links"><a class="links" href="FAQ.html">FAQ</a></li>
                     <li class="nav-links"><a class="links" href="Contact.html">Contact Us</a></li>
+                    <li onclick=showBurger() class="nav-links"><a class="menu"><i class="fa-solid fa-bars"></i></a></li>
+
                 </ul>
             </nav>
         </header>
@@ -28,7 +38,7 @@
 
         <section class="intro">
             <div class="intro-text">
-                <p id="text">Schedule a Free Estimate Today</p>                
+                <p id="text">Schedule a Free Estimate Today!</p>                
             </div>
         </section>
         <section class="form"> 
@@ -46,7 +56,7 @@
                         <h2>Get in Touch</h2>
                     </div>
                     <hr>
-                    <input class="contact-input" type="text" name="name" placeholder="Full Name" rquired/>
+                    <input class="contact-input" type="text" name="name" placeholder="Full Name" required/>
                     <input class="contact-input" type="email" name="email" placeholder="Email" required/>
                     <input class="contact-input" type="tel" name="phone-number" placeholder="Phone Number" required/> 
                     <textarea class="contact-input" name="message" placeholder="Add a Message"></textarea> 
@@ -67,5 +77,6 @@
                 <i class="fa-brands fa-instagram fa-2xl"></i>
             </div>
         </footer>
+        <script src="menu.js"></script>
     </body>
 </html>
