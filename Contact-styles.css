@@ -163,19 +163,20 @@ header{
 }
 
 .contact-form{
-    padding: 100px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     font-family: "Crimson Text", 'Times New Roman', Times, serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: antiquewhite;
+    width: 100%;
+    padding: 100px 0 100px 0; 
     font-size: 30px;
     font-style: italic;
     font-weight: 400;
-    background-color: #612521;
+    background-color: #612526;
+    text-align: center;
     
 }
-
 
 .contact-left{
     display: flex;
@@ -190,7 +191,6 @@ header{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     padding-bottom: 10px;
 }
-
 
 .contact-form hr{
     width: 150px;
@@ -211,7 +211,6 @@ header{
     box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.5);
     padding: 0 10px;
 }
-
 
 .contact-input:hover{
     border: 2px solid #312c2c; 
@@ -244,7 +243,6 @@ header{
 .contact-left button:hover{
     background: linear-gradient(90deg, #312c2c, transparent);
 }
-
 footer{
     background-color: #312c2c;
     text-align: center;
