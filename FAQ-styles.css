@@ -373,7 +373,7 @@ footer p{
     }
 }
 
-.fa-bars{
+header .fa-bars{
     display: none;
 }
 
@@ -385,7 +385,7 @@ header .fa-bars:hover{
         display: none;
     }
 
-    .fa-bars{
+    header .fa-bars{
         display: block;
     }
         
